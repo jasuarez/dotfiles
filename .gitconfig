@@ -1,0 +1,54 @@
+[user]
+   name   = Juan A. Suarez Romero
+   email  = jasuarez@igalia.com
+
+[color]
+   ui   = auto
+
+[color.grep]
+   filename = green
+
+[alias]
+   agrep         = grep --break --heading -n
+   ci            = commit
+   co            = checkout
+   fa            = fetch --all --prune --tags --recurse-submodules=yes
+   fp            = format-patch -M -C
+   lola          = log --oneline --decorate --all --graph
+   mfp           = format-patch -M -C -n --cover-letter
+   new           = log @{1}..@{0}
+   patch-extract = !sh -c 'git fp $0^..$0'
+   pe            = !sh -c 'git fp $0^..$0'
+   se            = send-email --suppress-cc=all
+   st            = status
+   stat          = status
+
+[pager]
+   status
+
+[giggle]
+   compact-mode                 = false
+   file-view-vpane-position     = 795
+   history-view-vpane-position  = 302
+   main-window-geometry         = 1410x870+0+50
+   main-window-maximized        = false
+   main-window-view             = HistoryView
+
+[bz]
+   browser      = firefox3
+
+[push]
+   default      = simple
+
+[core]
+	deltaBaseCacheLimit = 1G
+
+[diff]
+   tool = meld
+
+[merge]
+	tool = meld_4panes
+	conflictstyle = diff3
+
+[mergetool "meld_4panes"]
+	cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
