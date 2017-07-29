@@ -1,0 +1,3 @@
+[submodule ".local/bin"]
+	path = .local/bin
+	url = https://github.com/jasuarez/scripts.git
