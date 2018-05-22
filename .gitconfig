@@ -1,6 +1,7 @@
 [user]
-   name   = Juan A. Suarez Romero
-   email  = jasuarez@igalia.com
+   name       = Juan A. Suarez Romero
+   email      = jasuarez@igalia.com
+   signingkey = 336909B6B25FADFA
 
 [color]
    ui   = auto
@@ -52,3 +53,5 @@
 
 [mergetool "meld_4panes"]
 	cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+[http]
+	cookiefile = /home/jasuarez/.gitcookies
