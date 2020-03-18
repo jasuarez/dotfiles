@@ -46,7 +46,8 @@
 	deltaBaseCacheLimit = 1G
 
 [diff]
-   tool = meld
+   tool     = meld
+   noprefix = true
 
 [merge]
 	tool = meld_4panes
