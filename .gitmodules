@@ -1,15 +1,15 @@
 [submodule ".local/bin"]
-	path = .local/bin
+	path = local/bin
 	url = https://github.com/jasuarez/scripts.git
 [submodule ".vim"]
-	path = .vim
+	path = vim
 	url = https://github.com/jasuarez/vim.d
 [submodule ".emacs.d"]
-	path = .emacs.d
+	path = emacs.d
 	url = https://github.com/jasuarez/emacs.d
 [submodule ".bashrc.d"]
-	path = .bashrc.d
+	path = bashrc.d
 	url = https://github.com/jasuarez/bashrc.d
 [submodule ".themes/jasuarez"]
-	path = .themes/jasuarez
+	path = themes/jasuarez
 	url = https://github.com/jasuarez/gnome-theme
