@@ -1,10 +1,10 @@
 [user]
-   name       = Juan A. Suarez Romero
    email      = jasuarez@igalia.com
+   name       = Juan A. Suarez Romero
    signingkey = 336909B6B25FADFA
 
 [color]
-   ui   = auto
+   ui = auto
 
 [color.grep]
    filename = green
@@ -31,31 +31,32 @@
    status
 
 [giggle]
-   compact-mode                 = false
-   file-view-vpane-position     = 795
-   history-view-vpane-position  = 302
-   main-window-geometry         = 1410x870+0+50
-   main-window-maximized        = false
-   main-window-view             = HistoryView
+   compact-mode                = false
+   file-view-vpane-position    = 795
+   history-view-vpane-position = 302
+   main-window-geometry        = 1410x870+0+50
+   main-window-maximized       = false
+   main-window-view            = HistoryView
 
 [bz]
-   browser      = firefox3
+   browser = firefox
 
 [push]
-   default      = simple
+   default = simple
 
 [core]
-	deltaBaseCacheLimit = 1G
+   deltaBaseCacheLimit = 1G
 
 [diff]
    tool     = meld
    noprefix = true
 
 [merge]
-	tool = meld_4panes
-	conflictstyle = diff3
+   conflictstyle = diff3
+   tool          = meld_4panes
 
 [mergetool "meld_4panes"]
-	cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+   cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+
 [http]
-	cookiefile = /home/jasuarez/.gitcookies
+   cookiefile = /home/jasuarez/.gitcookies
