@@ -11,6 +11,7 @@
 
 [alias]
    agrep         = grep --break --heading -n
+   branch-backup = !sh -c 'git branch `git branch --show-current`-`date +%Y%m%d`'
    branch-tmp    = !sh -c 'git co -b `mktemp -u | cut -d/ -f3`'
    ci            = commit
    co            = checkout
