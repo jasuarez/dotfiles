@@ -11,7 +11,7 @@
 
 [alias]
    agrep         = grep --break --heading -n
-   branch-backup = !sh -c 'git branch `git branch --show-current`-`date +%Y%m%d`'
+   branch-backup = !sh -c 'git branch `git branch --show-current`-`git log -1 --pretty=tformat:%cd --date=format:%Y%m%d%H%M%S`'
    branch-tmp    = !sh -c 'git co -b `mktemp -u | cut -d/ -f3`'
    ci            = commit
    co            = checkout
@@ -61,3 +61,8 @@
 
 [http]
    cookiefile = /home/jasuarez/.gitcookies
+[sendemail]
+	smtpencryption = tls
+	smtpserver = mail.igalia.com
+[init]
+	defaultBranch = main
