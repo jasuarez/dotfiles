@@ -13,3 +13,6 @@
 [submodule "home/.bashrc.d"]
 	path = bashrc.d
 	url = https://github.com/jasuarez/bashrc.d
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/jasuarez/nvim
